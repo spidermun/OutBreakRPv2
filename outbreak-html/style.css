@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.993), rgba(20, 20, 20, 0.89)), url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #141414;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+} 
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #141414;
+    background:transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:#141414;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+/** SKLEP Chodzi o gÅ‚ownÄ… strone nasz sklep **/
+.sklep{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    background: repeating-linear-gradient(to top, rgb(136, 58, 184), rgb(68, 9, 156));
+    color: rgb(255, 255, 255);
+}
+.sklep h1{
+    font-size: 40px;
+}
+.sklep p{
+    font-size: 40px;
+}
+
+.minka{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0,0,0,0.75)), url(smutnaminka.png);
+    background-size: cover;
+    background-position: center;
+}
+/** Regulamin **/
+.regulamin{
+    width: 100%;
+    height: 460vh;
+    background: repeating-linear-gradient(to top, rgb(136, 58, 184), rgb(68, 9, 156));
+    background-size: cover;
+    background-position: center;
+
+}
+.regulamin p{
+    color: #fff
+}
+
+
+/** Administracja **/
+
+.cardstaff{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #141414;
+
+}
+.cardstaff img{
+    border: 2px solid #141414;
+    border-radius: 50px;
+    top: 25%;
+}
+.cardstaff p {
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+} 
+.cardstaff h3 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+} 
+
+.cardstaff1{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #141414;
+
+}
+.cardstaff1 img{
+    border: 2px solid #141414;
+    border-radius: 50px;
+    top: 25%;
+}
+.cardstaff1 p {
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+} 
+.cardstaff1 h3 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+} 
+
+.cardstaff2{
+    width: 390%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #141414;
+
+}
+.cardstaff2 img{
+    border: 2px solid #141414;
+    border-radius: 50px;
+    top: 25%;
+}
+.cardstaff2 p {
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+} 
+.cardstaff2 h3 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+} 
+
+.content2{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content2 p {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+} 
+.by {
+        width: 100%;
+        position: absolute;
+        top: 98%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .by h1{
+        font-size: 10px;
+    }
+
+    .support{
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .support h1{
+        font-size: 50px;
+    }
+
+.app{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    transform: translateY(-40%);
+    color: #fff;
+}
+.app h1{
+    font-size: 50px;
+}
+.app p1{
+    font-size: 40px;
+    color: #141414;
+}
+
+.content4{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content4 h1{
+    font-size: 50px;
+}
